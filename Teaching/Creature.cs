@@ -1,0 +1,6 @@
+﻿namespace Teaching
+{
+	class Creature
+	{
+	}
+}
