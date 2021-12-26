@@ -6,6 +6,7 @@ namespace Teaching
 	{
 		static void Main(string[] args)
 		{
+			#region Basics
 			var a = 3;
 
 			switch (a)
@@ -43,8 +44,6 @@ namespace Teaching
 				Console.WriteLine("lolisek");
 			} while (a < 3);
 
-
-
 			var b = new int[] { 1, 2, 3, 4 };
 			for (var i = 0; i < b.Length; i++)
 			{
@@ -64,8 +63,9 @@ namespace Teaching
 			{
 				Console.WriteLine(prvek);
 			}
+			#endregion Basics
 
-
+			#region Arrays
 			var c = new int[8] { 1, 2, 3, 4, 5, 0, 0, 0 };
 			var d = new int[] { 1, 2, 3, 4, 5 };
 
@@ -82,7 +82,9 @@ namespace Teaching
 			Array.Sort(c);
 
 			Console.WriteLine(string.Join(", ", c));
+			#endregion Arrays
 
+			#region Classes
 			var m = new Mammal("Alex", "yellow", 5, "meat");
 			Console.WriteLine(m.Age);
 			m.Age = 7;
@@ -105,7 +107,6 @@ namespace Teaching
 			Console.WriteLine(g);
 
 			Console.WriteLine(Tool.TwoDividedByThree);
-
 
 			dog.DoTrick();
 			dog.Sleep();
@@ -130,6 +131,7 @@ namespace Teaching
 					Console.WriteLine("smula");
 				}
 			}
+			#endregion Classes
 
 			Console.ReadKey(true);
 		}
