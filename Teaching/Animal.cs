@@ -1,22 +1,16 @@
 ﻿namespace Teaching
 {
-	abstract class Animal : Creature
+	class Animal
 	{
-		public string Name { get; private set; }	
-		public string Color { get; }
+		public string Name { get; set; }
+		public string Color { get; set; }
 		public int Age { get; set; }
 
-
-		public Animal(string name, string color, int Age)
+		public Animal(string Name, string color, int age)
 		{
-			Name = name;
+			this.Name = Name;
 			Color = color;
-			this.Age = Age;
-		}
-
-		public void Rename(string newName)
-		{
-			Name = newName;
+			Age = age;
 		}
 	}
 }

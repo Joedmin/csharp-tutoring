@@ -18,7 +18,7 @@ namespace Teaching
 		{
 			var r = new Random().Next(3, 6);
 			if (r == 4)
-			{ 
+			{
 				return null;
 			}
 			return r;

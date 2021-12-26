@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wfZCq7l3Q0iILBrcFKpLfoCBal/YqKhML5ao7WWihIs/53p1bzAzmpbpK1G6XBwnpdBCG2ECsvv0EcmyhLzjwQ==",
+  "dgSpecHash": "xkPNjmQ7kDODnakheMD15m+zR2Xm2KbZeE+2Kj2dncyxLj3gR9RDxwt9xuT5rM5gbHz3pXfkq5a68ebtJovzDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\Teaching.csproj",
+  "projectFilePath": "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\Teaching.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

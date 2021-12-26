@@ -5,7 +5,6 @@ C:\Users\joedm\source\repos\Teaching\Teaching\bin\Debug\net5.0\Teaching.runtimec
 C:\Users\joedm\source\repos\Teaching\Teaching\bin\Debug\net5.0\Teaching.dll
 C:\Users\joedm\source\repos\Teaching\Teaching\bin\Debug\net5.0\ref\Teaching.dll
 C:\Users\joedm\source\repos\Teaching\Teaching\bin\Debug\net5.0\Teaching.pdb
-C:\Users\joedm\source\repos\Teaching\Teaching\obj\Debug\net5.0\Teaching.csproj.AssemblyReference.cache
 C:\Users\joedm\source\repos\Teaching\Teaching\obj\Debug\net5.0\Teaching.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\joedm\source\repos\Teaching\Teaching\obj\Debug\net5.0\Teaching.AssemblyInfoInputs.cache
 C:\Users\joedm\source\repos\Teaching\Teaching\obj\Debug\net5.0\Teaching.AssemblyInfo.cs

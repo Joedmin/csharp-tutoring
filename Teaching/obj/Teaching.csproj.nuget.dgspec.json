@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\Teaching.csproj": {}
+    "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\Teaching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\Teaching.csproj": {
+    "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\Teaching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\Teaching.csproj",
+        "projectUniqueName": "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\Teaching.csproj",
         "projectName": "Teaching",
-        "projectPath": "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\Teaching.csproj",
+        "projectPath": "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\Teaching.csproj",
         "packagesPath": "C:\\Users\\joedm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joedm\\Desktop\\csharp-tutoring\\Teaching\\obj\\",
+        "outputPath": "C:\\Users\\joedm\\source\\repos\\Teaching\\Teaching\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\joedm\\Documents\\GitLab\\Jablotron.Nuget.Local": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.jablotron.cloud/repository/nuget-develop/": {}
         },
         "frameworks": {
           "net5.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

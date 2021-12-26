@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Teaching
+﻿namespace Teaching
 {
 	class Mammal : Animal
 	{
@@ -13,6 +7,11 @@ namespace Teaching
 		public Mammal(string name, string color, int age, string food) : base(name, color, age)
 		{
 			TypeOfFood = food;
+		}
+
+		public void Rename(string name)
+		{
+			Name = name;
 		}
 	}
 }

@@ -76,7 +76,7 @@ namespace Teaching
 				Console.Write(prvek + ", ");
 			}
 			Console.WriteLine();
-			
+
 			Console.WriteLine(string.Join(", ", c));
 
 			Array.Sort(c);
@@ -109,7 +109,7 @@ namespace Teaching
 
 			dog.DoTrick();
 			dog.Sleep();
-			dog.Cuddle();
+			//dog.Cuddle();
 
 			Cat cat = new("Rosmarie", "black", 6, "fish", "bengal");
 
