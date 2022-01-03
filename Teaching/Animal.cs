@@ -1,6 +1,8 @@
-﻿namespace Teaching
+﻿using System;
+
+namespace Kolekce
 {
-	class Animal
+	public class Animal : Creature
 	{
 		public string Name { get; set; }
 		public string Color { get; set; }
@@ -11,6 +13,21 @@
 			this.Name = Name;
 			Color = color;
 			Age = age;
+		}
+
+		public virtual void MakeNoise()
+		{
+			Console.WriteLine("Roar");
+		}
+
+		public string GetRandomString()
+		{
+			return "Abcd";
+		}
+
+		public override void Hunt()
+		{
+			Console.WriteLine("Hunting");
 		}
 	}
 }

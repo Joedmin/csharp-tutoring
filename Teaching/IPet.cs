@@ -1,6 +1,6 @@
-﻿namespace Teaching
+﻿namespace Kolekce
 {
-	interface IPet
+	public interface IPet
 	{
 		public string Race { get; }
 		public string Owner { get; set; }

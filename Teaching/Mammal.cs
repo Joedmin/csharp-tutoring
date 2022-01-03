@@ -1,6 +1,6 @@
-﻿namespace Teaching
+﻿namespace Kolekce
 {
-	class Mammal : Animal
+	public class Mammal : Animal
 	{
 		public string TypeOfFood { get; }
 

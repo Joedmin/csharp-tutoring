@@ -1,0 +1,16 @@
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.exe
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.deps.json
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.runtimeconfig.json
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.runtimeconfig.dev.json
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.dll
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\ref\Zaklady.dll
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\bin\Debug\net5.0\Zaklady.pdb
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.csproj.AssemblyReference.cache
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.AssemblyInfoInputs.cache
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.AssemblyInfo.cs
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.csproj.CoreCompileInputs.cache
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.dll
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\ref\Zaklady.dll
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.pdb
+C:\Users\joedm\Documents\GitHub\Teaching\Zaklady\obj\Debug\net5.0\Zaklady.genruntimeconfig.cache

@@ -1,137 +1,128 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace Teaching
+namespace Kolekce
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			#region Basics
-			var a = 3;
+			var animal = new Animal("Rex", "Black", 3);
+			animal.Hunt();
+			animal.MakeNoise();
+			var dog = new Dog("Aa", "yellow", 5, "meat", "bernandýn");
+			dog.MakeNoise();
+			dog.Hunt();
+			var cat = new Cat("BB", "gray", 6, "meat", "bengal");
+			cat.MakeNoise();
 
-			switch (a)
+
+			var arr = new int?[] { 3, 4, 6, 9 };
+
+			Console.WriteLine(string.Join(", ", arr));
+			Console.WriteLine(arr.Length);
+
+			arr[2] = null;
+
+
+			Console.WriteLine(arr.Length);
+
+			Console.WriteLine(string.Join(", ", arr));
+
+
+			var arr13 = new int?[arr.Length - 1];
+
+			for (var i = 0; i < arr.Length - 1; i++)
 			{
-				case 0:
-				case 1:
-				case 2:
-				case 3:
-				case 4:
-				case 5:
-				case 6:
-				case 7:
-					Console.WriteLine("jupi");
-					break;
-				default:
-					Console.WriteLine("smula");
-					break;
+				arr13[i] = arr[i];
 			}
 
-			if (a == 0 || a == 1 || a == 2 || a == 3)
+			Console.WriteLine(string.Join(", ", arr));
+			Console.WriteLine(arr.Length);
+
+			Console.WriteLine(string.Join(", ", arr13));
+			Console.WriteLine(arr13.Length);
+
+			var list = new List<int>() { 3, 4, 5, 6, 7, 8, 67 };
+			list.Add(3);
+			list.Add(4);
+			list.Add(6);
+			list.Add(9);
+
+			Console.WriteLine(list.Count);
+
+			list.Remove(6);
+			Console.WriteLine(list.Count);
+			list.Clear();
+
+			list.Add(4);
+			list.Add(12);
+
+			Console.WriteLine(list.Count);
+			Console.WriteLine(string.Join(", ", list));
+
+			var dict = new Dictionary<string, int>() { { "kniha", 4 } };
+			dict.Add("auto", 2);
+			dict.Add("budova", 5);
+
+
+			foreach (var pair in dict)
 			{
+				Console.WriteLine($"{pair.Key}:{pair.Value}");
+			}
+
+
+			foreach (KeyValuePair<string, int> pair in dict)
+			{
+				Console.WriteLine($"{pair.Key}:{pair.Value}");
+			}
+
+
+			if (dict.TryGetValue("auto323", out int value))
+			{
+				Console.WriteLine($"Mam hodnotu : {value}");
 			}
 			else
 			{
-
+				Console.WriteLine("Nemam hodnotu");
 			}
 
-			while (a < 3)
+
+
+			try
 			{
-				Console.WriteLine("lol");
+				Console.WriteLine($"Mam hodnotu : {dict["budova"]}");
+			}
+			catch
+			{
+				Console.WriteLine("nemamm klic");
 			}
 
-			do
-			{
-				Console.WriteLine("lolisek");
-			} while (a < 3);
 
-			var b = new int[] { 1, 2, 3, 4 };
-			for (var i = 0; i < b.Length; i++)
+			var arr1 = new int[,] { { 1, 2, 3, 4 }, { 4, 5, 6, 7 }, { 9, 4, 4, 7 } };
+			Console.WriteLine(arr1.Length);
+			Console.WriteLine(arr1[1, 1]);
+
+			Console.WriteLine(string.Join(", ", arr.Cast<int>()));
+
+
+			Console.WriteLine(string.Join(", ", list.Where(i => i % 2 != 0)));
+
+			var arr2 = new Animal[] { new Dog("Rex", "gold", 3, "meat", "vlcak"), new Cat("Cat", "black", 7, "meat", "bengal"), new Mammal("Petr", "yellow", 9, "meat") };
+
+			foreach (var item in arr2)
 			{
-				if (i == 2)
-				{
-					continue;
-				}
-				if (i == 3)
-				{
-					break;
-				}
-				Console.WriteLine(b[i]);
+				Console.WriteLine(item.Name);
 			}
 
-			// for i in [1,2,3,4]:
-			foreach (var prvek in b)
-			{
-				Console.WriteLine(prvek);
-			}
-			#endregion Basics
+			Console.WriteLine(string.Join(", ", arr2.Select(i => i.GetRandomString())));
 
-			#region Arrays
-			var c = new int[8] { 1, 2, 3, 4, 5, 0, 0, 0 };
-			var d = new int[] { 1, 2, 3, 4, 5 };
 
-			c[3] = 9;
 
-			foreach (var prvek in c)
-			{
-				Console.Write(prvek + ", ");
-			}
-			Console.WriteLine();
-
-			Console.WriteLine(string.Join(", ", c));
-
-			Array.Sort(c);
-
-			Console.WriteLine(string.Join(", ", c));
-			#endregion Arrays
-
-			#region Classes
-			var m = new Mammal("Alex", "yellow", 5, "meat");
-			Console.WriteLine(m.Age);
-			m.Age = 7;
-			Console.WriteLine(m.Age);
-			m.Rename("Tonda");
-			Console.WriteLine(m.Name);
-
-			var dog = new Dog("Rufus", "gold", 3, "meat", "retirever")
-			{
-				CollarColor = "blue",
-				LeadColor = "blue",
-			};
-
-			Console.WriteLine(dog.LeadColor);
-
-			Tool.MakeBoom();
-			var v = Tool.Multiply(2, 3);
-			Console.WriteLine(v);
-			var g = Math.Pow(3, 2);
-			Console.WriteLine(g);
-
-			Console.WriteLine(Tool.TwoDividedByThree);
-
-			dog.DoTrick();
-			dog.Sleep();
-			//dog.Cuddle();
-
-			Cat cat = new("Rosmarie", "black", 6, "fish", "bengal");
-
-			cat.Eat();
-			cat.Cuddle();
-			cat.Sleep();
-
-			for (var i = 0; i < 3; i++)
-			{
-				var r = Tool.GetRandomNuber();
-
-				if (r is not null)
-				{
-					Console.WriteLine(r);
-				}
-				else
-				{
-					Console.WriteLine("smula");
-				}
-			}
-			#endregion Classes
+			Console.WriteLine(list);
+			Console.WriteLine(list.ToArray());
+			Console.WriteLine(list.All(i => i % 2 == 0));
 
 			Console.ReadKey(true);
 		}

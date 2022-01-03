@@ -1,25 +1,34 @@
 ﻿using System;
 
-namespace Teaching
+namespace Kolekce
 {
-	sealed class Dog : Mammal, IPet
+	public class Dog : Mammal, IPet
 	{
 		public string CollarColor { get; set; } = "black";
 		public string LeadColor { get; set; }
 		public string Race { get; }
 		public string Owner { get; set; }
 
+		public Dog() : base("default", "default", -1, "default")
+		{
+		}
+
 		public Dog(string name, string color, int age, string food, string race) : base(name, color, age, food)
 		{
 			Race = race;
 		}
 
-		public void Bark()
+		public override void MakeNoise()
 		{
 			Console.WriteLine("Bark!");
 		}
 
-		public void Eat()
+		public override void Hunt()
+		{
+			Console.WriteLine("The dog is hunting");
+		}
+
+		public override void Eat()
 		{
 			Console.WriteLine("*eating*");
 		}
@@ -37,6 +46,11 @@ namespace Teaching
 		public void Cuddle()
 		{
 			Console.WriteLine("*cuddling with owner*");
+		}
+
+		public override string ToString()
+		{
+			return $"Pes {Name}";
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Teaching
+namespace Kolekce
 {
 	static class Tool
 	{

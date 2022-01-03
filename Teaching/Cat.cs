@@ -1,25 +1,33 @@
 ﻿using System;
 
-namespace Teaching
+namespace Kolekce
 {
-	class Cat : Mammal, IPet
+	public class Cat : Mammal, IPet
 	{
 		public string Race { get; }
 
 		public string Owner { get; set; }
 
+		public Cat() : base("default", "default", -1, "default")
+		{
+		}
 
 		public Cat(string name, string color, int age, string food, string race) : base(name, color, age, food)
 		{
 			Race = race;
 		}
 
-		public void Cuddle()
+		public override void MakeNoise()
 		{
-			throw new ArgumentException("Fuck you");
+			Console.WriteLine("Meow");
 		}
 
-		public void Eat()
+		public void Cuddle()
+		{
+			//throw new ArgumentException("Fuck you");
+		}
+
+		public override void Eat()
 		{
 			Console.WriteLine("*eating*");
 		}
@@ -30,6 +38,11 @@ namespace Teaching
 			{
 				Console.WriteLine("ZzZzZ");
 			}
+		}
+
+		public override string ToString()
+		{
+			return $"Cat {Name}";
 		}
 	}
 }
