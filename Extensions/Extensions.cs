@@ -1,6 +1,6 @@
-﻿namespace Extentions
+﻿namespace Extensions
 {
-    public static class Extentions
+    public static class Extensions
     {
         public static bool IsEven(this int num)
         {

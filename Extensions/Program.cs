@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Extentions
+namespace Extensions
 {
     internal class Program
     {
@@ -10,7 +10,7 @@ namespace Extentions
             int myNumber = 16;
             double myDouble = 3.14;
 
-            Console.WriteLine(Extentions.IsEven(16));
+            Console.WriteLine(Extensions.IsEven(16));
             Console.WriteLine(myNumber.IsEven());
             Console.WriteLine(myDouble.IsEven());
 
